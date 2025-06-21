@@ -1,0 +1,314 @@
+
+.card{
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.imganContainer{
+    width: 100%;
+    height: 180px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nombre{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.precio{
+    font-size: 16px;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 4px;
+}
+.disponibles{
+    font-size: 13px;
+    color: #666666;
+    margin-bottom: 12px;
+}
+
+.cantidadContainer{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.qtyButton{
+    background-color: #e0e0e0;
+    border:  1px solid black;;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.product-grid {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*  Esto centra horizontalmente las tarjetas */
+    gap: 20px; /* Espacio entre productos */
+}
+
+.editar-btn {
+    position:absolute;
+    width:153px;
+    top: 25px;
+    border-radius: 10px;
+    right: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1;
+    background-color: #ffffff;
+    color:#000000;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  .editar-btn:hover{
+    transition: background-color 0.4s ease, color 0.4s ease;
+    background-color: rgb(52, 164, 0);
+    color: white;
+  }
+
+  .verDesc-btn {
+    /* position:absolute; */
+    text-decoration: none;
+    width:153px;
+    top: 85px;
+    border-radius: 10px;
+    right: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1;
+    background-color: #ffffff;
+    color:#000000;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  .verDesc-btn:hover{
+    transition: background-color 0.4s ease, color 0.4s ease;
+    background-color: rgb(40, 103, 239);
+    color: white;
+  }
+  
+
+  .borrar-btn {
+    position:absolute;
+    width:153px;
+    top: 145px;
+    border-radius: 10px;
+    right: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1;
+    background-color: #ffffff;
+    color:#000000;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  .borrar-btn:hover{
+    transition: background-color 0.4s ease, color 0.4s ease;
+    background-color: rgb(255, 0, 0);
+    color: white;
+  }
+
+.admin-controls {
+    position:absolute;
+    top: 25px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1;
+  }
+  
+  .admin-button {
+    margin: 1rem;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: scale(1) !important;
+    transition: transform 1s ease-in-out !important;
+  }
+  .admin-button:hover{
+    transform: scale(1.2) !important;
+    transition: transform 1s ease-in-out !important;
+  }
+
+
+  .admin-button-center {
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+  }
+
+  .product-list-container {
+    /* degradado de azul (izquierda) a púrpura (derecha) */
+    background: linear-gradient(to right, #0000ff, #800080);
+    /*min-height: 100%;  para que el fondo cubra toda la pantalla */
+    padding: 20px;
+    /*color: white;  para que el texto se vea sobre el fondo oscuro */
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 8px;
+  }
+  
+  .pagination button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .pagination button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .detalle-container {
+    max-width: 600px;
+    color:#ccc;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .detalle-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    /* background: #007bff; */
+    /* color: white; */
+    border:  1px solid black;;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .cart-drawer {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100vh;
+    background-color: #fefefe;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+  }
+  
+  .cart-drawer.open {
+    right: 0;
+  }
+  
+  .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .close-button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .cart-content {
+    margin-top: 20px;
+  }
+  
+  .cart-item {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ecf0f1;
+    color:#2c3e50;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+  
+  .delete-button {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .cart-total {
+    margin-top: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    color: #2c3e50;
+  }
+  
+  .btn-finalizar {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .btn-finalizar:hover {
+    background-color: #1e8449;
+  }
+  

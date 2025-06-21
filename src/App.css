@@ -1,0 +1,153 @@
+/* App.css o index.css */
+
+body, html, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+  }
+
+  .btnCart i {
+    color: lime;
+    font-size: 1.5rem; /* opcional: para ajustar tamaño */
+  }
+  .cart-item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Fuerza la dirección en columna */
+    gap: 10px; /* Espaciado entre ítems */
+  }
+  
+  .cart-item li {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+  .product-imagen {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    color:black;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  
+
+  .fondo {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://gara.ddns.net/img2/fondo2.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 55vh;    
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .fondo01 {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("http://gara.ddns.net/img2/viajes.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 10vh;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    
+  }
+
+  .fondo02 {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("http://gara.ddns.net/img2/Login-Fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 10vh;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    
+  }
+
+  .home {
+    color: white;
+    text-align: center;
+    text-shadow:
+      -1px -1px 1px rgba(0, 0, 0, 0.5),
+      1px -1px 1px rgba(0, 0, 0, 0.5),
+      -1px  1px 1px rgba(0, 0, 0, 0.5),
+      1px  1px 1px rgba(0, 0, 0, 0.5),
+      0px  0px 15px rgba(0, 0, 0, 1); /* sombra difusa alrededor de cada letra */
+  }
+
+  .destinos{
+    text-align: center;
+    
+  }
+
+  .destinos-main{
+    background: linear-gradient(to right, rgb(134, 134, 255), rgb(179, 232, 252));
+    color: lightgray;
+  }
+
+  .acercade{
+    text-align: center;
+  }
+
+  .log{
+    text-align: center;
+  }
+
+  form.log {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    height: 50vh; /* Ocupa todo el alto de la ventana */
+  }
+
+  input.log,
+button.log {
+  margin: 10px 0;
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+}
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 1rem;
+}
