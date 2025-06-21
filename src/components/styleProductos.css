@@ -23,8 +23,8 @@
     text-decoration: none;
 }
 
-.imagen{
-    width: 100%;
+.product-imagen{
+    width: 200px;
     height: 100%;
     object-fit: cover;
 }
