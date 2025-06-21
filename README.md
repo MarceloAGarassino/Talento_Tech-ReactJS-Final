@@ -24,20 +24,20 @@ Para el login la api tiene dos tipos de perfil de usuario y uno para usuario ine
    
 nombre: admin
 
-contraseña: AdMiN  
-  
-  
+contraseña: AdMiN
+<br/>
+<br/>
 **2) perfil: usuario comun**
    
 nombre: [cualquier nombre]
 
-contraseña: 123  		  
-  
-  
+contraseña: 123
+<br/>
+<br/>  
 **3) perfil: usuario inexistente**
 en caso que ninguno de estos sea reconocido la api devuelve el siguiente json:
-
-	
+<br/>
+<br/>
 {  
   "nombre": "Inexistente",  
   "contrasena": "Inexistente",  
