@@ -2,7 +2,9 @@
 ### Marcelo Augusto Garassino
 ### DNI 23.974.934
 ### marauggar@gmail.com
-
+<br/>
+<br/>
+<br/>
 Link al repositorio GitHub:
 https://github.com/MarceloAGarassino/Talento_Tech-ReactJS-Final
 
@@ -22,16 +24,16 @@ Para el login la api tiene dos tipos de perfil de usuario y uno para usuario ine
    
 nombre: admin
 
-contraseña: AdMiN
-
-
+contraseña: AdMiN  
+  
+  
 **2) perfil: usuario comun**
    
 nombre: [cualquier nombre]
 
-contraseña: 123		  
-
-
+contraseña: 123  		  
+  
+  
 **3) perfil: usuario inexistente**
 en caso que ninguno de estos sea reconocido la api devuelve el siguiente json:
 
