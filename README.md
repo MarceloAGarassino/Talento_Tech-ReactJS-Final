@@ -11,10 +11,12 @@ http://gara.ddns.net/talento-tech-ReactJS/dist
 
 Link a la api:
 http://gara.ddns.net:21818/reactjs
-<br/><br/><br/>
-El proyecto funcinando, frontend y backend, estan alojados en el servidor de mi casa, por lo que su funcionamiento esta sujeto al cumplimiento de entrega de servicio por parte de EDESUR y CABLEVISION/FLOW/FIBERTEL
+<br/>
+<br/>
+<br/>
+El proyecto funcinando, frontend y backend, están alojados en el servidor de mi casa, por lo que su funcionamiento esta sujeto al cumplimiento de entrega de servicio por parte de EDESUR y CABLEVISION/FLOW/FIBERTEL
 
-Para el 'login' la api tiene dos tipos de perfil de usuario y uno para usuario inexistente:
+Para el login la api tiene dos tipos de perfil de usuario y uno para usuario inexistente:
 
 **1) perfil: administrador**
    
@@ -39,9 +41,14 @@ en caso que ninguno de estos sea reconocido la api devuelve el siguiente json:
   "contrasena": "Inexistente",  
   "perfil": "Ese usuario o contraseña no fue registrado."  
 }  
-<br/><br/><br/>
-En el caso que el perfil de administrador haya iniciado sesion, aparecerá sobre el textbox de busqueda el botón para agregar destinos. También aparecerán al lado de la foto de cada destino los botones para editar y borrar, todos completamente funcionales.  
-En el carrito de compras el botón de 'Finalizar compra' tambien impacta sobre el stock, descontando los items en la api.  
+<br/>
+<br/>
+<br/>
+En el caso que el perfil de administrador haya iniciado sesión, aparecerá sobre el textbox de búsqueda el botón para agregar destinos. También aparecerán al lado de la foto de cada destino los botones para editar y borrar, todos completamente funcionales.  
+En el carrito de compras el botón de 'Finalizar compra' también impacta sobre el stock, descontando los items en la api.  
 Las funciones de CRUD se pueden verificar en la pagina de la Api a través del SWAGGER que incorporé a esta.  
 También están disponibles mediante el SWAGGER la prueba de login y una opción de reset de la persistencia que se almacena en un archivo json.
-<br/><br/><br/>
+<br/>
+<br/>
+<br/>
+<br/>
