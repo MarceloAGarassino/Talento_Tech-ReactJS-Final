@@ -7,10 +7,12 @@
 <br/>
 Link al repositorio GitHub:
 https://github.com/MarceloAGarassino/Talento_Tech-ReactJS-Final
-
+<br/>
+<br/>
 Link al proyecto funcionando:
 http://gara.ddns.net/talento-tech-ReactJS/dist
-
+<br/>
+<br/>
 Link a la api:
 http://gara.ddns.net:21818/reactjs
 <br/>
@@ -19,24 +21,29 @@ http://gara.ddns.net:21818/reactjs
 El proyecto funcinando, frontend y backend, están alojados en el servidor de mi casa, por lo que su funcionamiento esta sujeto al cumplimiento de entrega de servicio por parte de EDESUR y CABLEVISION/FLOW/FIBERTEL
 
 Para el login la api tiene dos tipos de perfil de usuario y uno para usuario inexistente:
-
+<br/>
+<br/>
+<br/>
 **1) perfil: administrador**
-   
+<br/>
+<br/>
 nombre: admin
-
+<br/>
+<br/>
 contraseña: AdMiN
 <br/>
 <br/>
+<br/>
 **2) perfil: usuario comun**
-   
+<br/>
+<br/>
 nombre: [cualquier nombre]
-
+<br/>
+<br/>
 contraseña: 123
 <br/>
 <br/>  
-**3) perfil: usuario inexistente**
-en caso que ninguno de estos sea reconocido la api devuelve el siguiente json:
-<br/>
+**3) perfil: usuario inexistente:** en caso que ninguno de estos sea reconocido la api devuelve el siguiente json:
 <br/>
 {  
   "nombre": "Inexistente",  
