@@ -41,7 +41,7 @@ en caso que ninguno de estos sea reconocido la api devuelve el siguiente json:
 }  
 <br/><br/><br/>
 En el caso que el perfil de administrador haya iniciado sesion, aparecerá sobre el textbox de busqueda el botón para agregar destinos. También aparecerán al lado de la foto de cada destino los botones para editar y borrar, todos completamente funcionales.  
-En el carrito de compras el botón de Finalizar compra tambien impacta sobre el stock, descontando los items en la api.  
+En el carrito de compras el botón de 'Finalizar compra' tambien impacta sobre el stock, descontando los items en la api.  
 Las funciones de CRUD se pueden verificar en la pagina de la Api a través del SWAGGER que incorporé a esta.  
 También están disponibles mediante el SWAGGER la prueba de login y una opción de reset de la persistencia que se almacena en un archivo json.
 <br/><br/><br/>
