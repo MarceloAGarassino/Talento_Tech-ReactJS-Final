@@ -3,18 +3,32 @@ import { Link, useNavigate } from 'react-router-dom';
 import './styleEstatico.css';
 import Cart from '../Cart';
 import { AppContext } from '../../context/AppContext';
+import Swal from 'sweetalert2';
+
 
 const Header = () => {
   const [isCartOpen, setCartOpen] = useState(false);
   const navigate = useNavigate();
   const { cart, handleDeleteFromCart, perfil, setPerfil } = useContext(AppContext);
 
-  const handleLogout = () => {
+  const handleLogout = async () => {
     if (cart.length > 0) {
-      const confirmar = window.confirm("El carrito está lleno y se perderán las reservas. ¿Deseas continuar y vaciar el carro?");
-      if (!confirmar) return;
+      const result = await Swal.fire({
+        title: '¿Estás seguro?',
+        text: 'El carrito está lleno y se perderán las reservas. ¿Deseas continuar y vaciar el carro?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#d33',
+        cancelButtonColor: '#3085d6',
+        confirmButtonText: 'Sí, continuar',
+        cancelButtonText: 'Cancelar'
+      });
+  
+      if (!result.isConfirmed) return;
+  
       cart.forEach(item => handleDeleteFromCart(item));
     }
+  
     setPerfil(null);
   };
 
